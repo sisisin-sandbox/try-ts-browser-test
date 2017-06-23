@@ -1,0 +1,26 @@
+{
+  "name": "try-ts-browser-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "espower-typescript": "^8.0.0",
+    "power-assert": "^1.4.4",
+    "ts-loader": "^2.1.0",
+    "ts-node": "^3.0.6",
+    "typescript": "^2.3.4",
+    "webpack": "^3.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.4.2"
+  },
+  "scripts": {
+    "test": "mocha --compilers ts:espower-typescript/guess test/**/*.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}

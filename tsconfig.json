@@ -1,0 +1,6 @@
+{
+  "extends": "./tsconfg.dev.json",
+  "compilerOptions": {
+    "module": "commonjs"
+  }
+}
