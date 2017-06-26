@@ -1,7 +1,5 @@
-export function main() {
-  console.log('hoge');
+import { fn } from './mod';
+function main() {
+    console.log(fn());
 }
-
-export function fn() {
-  return 'aaa';
-}
+main();

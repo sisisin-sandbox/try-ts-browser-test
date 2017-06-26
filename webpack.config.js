@@ -8,11 +8,14 @@ module.exports = {
         test: /\.ts?$/,
         loader: 'ts-loader',
         exclude: /node_modules/,
-        options:{
+        options: {
           configFileName: './tsconfig.dev.json'
         }
       }
     ]
+  },
+  resolve: {
+    extensions: ['.ts']
   },
   output: {
     filename: 'bundle.js',

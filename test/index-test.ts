@@ -1,7 +1,7 @@
 import * as assert from 'power-assert';
-import { fn } from '../src/index';
+import { fn } from '../src/mod';
 
-describe('hoge', () => {
+describe('mod', () => {
   it('return aaa', () => {
     assert(fn() === 'aaa');
   });

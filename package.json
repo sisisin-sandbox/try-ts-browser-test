@@ -15,10 +15,13 @@
     "webpack": "^3.0.0"
   },
   "devDependencies": {
+    "@types/mocha": "^2.2.41",
+    "@types/power-assert": "^1.4.29",
     "mocha": "^3.4.2"
   },
   "scripts": {
-    "test": "mocha --compilers ts:espower-typescript/guess test/**/*.ts"
+    "test": "mocha --compilers ts:espower-typescript/guess test/**/*.ts",
+    "watch": "webpack -w"
   },
   "keywords": [],
   "author": "",
