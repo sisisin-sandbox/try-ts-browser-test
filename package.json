@@ -8,7 +8,9 @@
   },
   "dependencies": {
     "espower-typescript": "^8.0.0",
+    "node-static": "^0.7.9",
     "power-assert": "^1.4.4",
+    "selenium-webdriver": "^3.4.0",
     "ts-loader": "^2.1.0",
     "ts-node": "^3.0.6",
     "typescript": "^2.3.4",
@@ -21,7 +23,10 @@
   },
   "scripts": {
     "test": "mocha --compilers ts:espower-typescript/guess test/**/*.ts",
-    "watch": "webpack -w"
+    "watch": "webpack -w",
+    "pree2e": "mkdir -p e2e_tmp; node e2e/mock-server.js &",
+    "e2e": "mocha --harmony --timeout 20000 ./e2e/**/*-test.js",
+    "poste2e": "pkill -f 'node e2e/mock-server.js'"
   },
   "keywords": [],
   "author": "",

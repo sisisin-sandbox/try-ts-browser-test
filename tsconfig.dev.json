@@ -8,6 +8,6 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "typeRoots": ["node_modules/@types"],
-    "outDir": "tmp"
+    "outDir": "dist_tmp"
   }
 }
